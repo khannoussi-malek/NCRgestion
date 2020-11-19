@@ -1,0 +1,39 @@
+
+<ion-app >
+  <!-- <ion-header>
+     <ion-toolbar color="Success">
+       <ion-title>log in</ion-title>
+     </ion-toolbar>
+   </ion-header>-->
+ <ion-content>
+   <div margin-vertical >
+   <ion-grid >
+     <ion-row>
+       <ion-col class="VCenter" size-md="6" offset-md="3">
+         <ion-card class="card">
+           <ion-card-content>
+             <ion-card-title   text-center>
+               log in
+             </ion-card-title>
+             <ion-item >
+               <ion-label position="floating" >email</ion-label>
+               <ion-input [(ngModel)]="email"  id="email"></ion-input>
+             </ion-item>  
+             <ion-item>
+               <ion-label position="floating">password</ion-label>
+               <ion-input [(ngModel)]="password" type="password" id="password" ></ion-input>
+             </ion-item>
+             <div margin-vertical text-center >
+               <ion-button fill="outline" (click)="clear()" > <ion-icon name="close" slot="start"></ion-icon>clear </ion-button>
+               <ion-button style="color : white;" (click)="login()" > login <ion-icon name="log-in" slot="end"></ion-icon> </ion-button  >
+             </div> 
+           </ion-card-content>
+         </ion-card>
+       </ion-col>
+     </ion-row>
+   </ion-grid>
+
+   
+ </div>
+ </ion-content>
+</ion-app>

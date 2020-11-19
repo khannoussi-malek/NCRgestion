@@ -1,0 +1,69 @@
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title text-center>
+        Bonjour 
+      </ion-title>
+      <ion-button (click)="logout()"   slot="end"  animation="Animation" color="primary">
+        log-out
+        <ion-icon slot="end" name="md-log-out"  class="clientlogo"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <div class="imageradios">
+    <ion-avatar class="av">
+      <img class="image"src="{{photo}}" alt="">
+    </ion-avatar>
+  </div>
+  <br>
+  <br>
+  <h1 text-center>{{name}}</h1>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="../clients">
+        <ion-icon class="icon-bot" name="briefcase"></ion-icon>
+        <ion-label>clients</ion-label>
+       <!-- <ion-badge>6</ion-badge>-->
+      </ion-tab-button>
+
+      <ion-tab-button routerLink="../histoire">
+        <ion-icon class="icon-bot" name="ios-archive"></ion-icon>
+        <ion-label>histoire</ion-label>
+       <!-- <ion-badge>6</ion-badge>-->
+      </ion-tab-button>
+      
+  
+      <ion-tab-button routerLink="../storages">
+        <ion-icon class="icon-bot" name="ios-build"></ion-icon>
+        <ion-label>pieces</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>
+  <!-- <ion-fab class="fabs" vertical="bottom" horizontal="center" edge slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button routerLink="/histoire" class="fab-btns" >
+        <div class="group-item">
+           <ion-icon name="ios-archive" class="iconicon" ></ion-icon>
+           <div class="icon-text">histoire</div>
+         </div>
+       </ion-fab-button>
+       <ion-fab-button routerLink="/rapport" class="fab-btns" >
+        <div class="group-item">
+           <ion-icon name="md-filing" class="iconicon" ></ion-icon>
+           <div class="icon-text">Rapport</div>
+         </div>
+       </ion-fab-button>
+        
+    </ion-fab-list>
+  </ion-fab> -->
+</ion-content>

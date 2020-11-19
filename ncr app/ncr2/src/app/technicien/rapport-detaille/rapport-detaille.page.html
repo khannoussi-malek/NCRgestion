@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Rapport Détaillé</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label >client:{{client}} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >site:{{site}} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >date Debut:{{dateDebut}} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >date Fin:{{dateFin}} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >probleme:{{probleme}} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >traitement:{{traitement}} </ion-label>
+    </ion-item>
+    <ion-item>
+          <img class="image"src="http://127.0.0.1:8000/{{photo}}" alt="">
+   </ion-item>
+    <ion-item *ngIf="mc!=null">
+      <ion-label >site:{{mc}} </ion-label>
+    </ion-item>
+    <ion-item  *ngIf="mp!=null" >
+      <ion-label >site:{{mp}} </ion-label>
+    </ion-item>
+    <ion-item *ngIf="inst=='inst'">
+      <ion-label >site:{{inst}} </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >site:{{typeDeSortie}} </ion-label>
+    </ion-item>
+</ion-content>

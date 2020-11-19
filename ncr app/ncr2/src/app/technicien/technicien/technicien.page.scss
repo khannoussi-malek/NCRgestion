@@ -1,0 +1,49 @@
+.av{
+    height: 250px;
+    width: 250px;
+    transform: translate(0,25%);
+}
+.imageradios{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.hidden{
+    display: none;
+}
+.fabs{
+    bottom: 20px;
+}
+.fab-btns{
+    --border-radius: 10px;
+    width: 70px;
+    height: 55px;
+    display: flex;
+    margin-left: -8px;
+    flex-direction: column;
+}
+.group-item{
+    transform: translate(20px,0px);
+
+}
+ion-tab-bar{
+    justify-content: space-between;
+}
+.iconicon{
+    margin: 5px;
+    transform: scale(2,2) translate(-10px,0);
+}
+.icon-text{
+    transform: translate(-20px,0px);
+}
+ion-icon{
+    transform: scale(1.5,1.5);
+}
+ion-label{
+    transform: scale(1.5,1.5);
+}
+.icon-bot{
+   position: relative;
+   top: -2px;
+}

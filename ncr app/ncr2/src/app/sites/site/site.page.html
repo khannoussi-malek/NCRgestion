@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start"  routerLink="../../clients">
+      <ion-icon name="arrow-round-back"></ion-icon>
+      </ion-button>
+    <ion-title>site</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label class="client-item"> <b> Site:</b> {{site}} </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="client-item"><b> Adresse:</b> {{adresse}} </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="client-item"><b> Model:</b> {{model}} </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="client-item"><b> PN:</b> {{PN}} </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="client-item"><b> Date Instalation:</b> {{dateInstalation}} </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="client-item"><b> Garantie:</b> {{garantie}}  années</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="client-item"><b> Maintenance préventive <br>a partire de {{typeMP}} </b></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="client-item"><b> Maintenance préventive<br> chaque: {{MP}} Mois</b> </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="client-item"><b> Date MP:</b> {{dateMP}} </ion-label>
+  </ion-item>
+</ion-content>

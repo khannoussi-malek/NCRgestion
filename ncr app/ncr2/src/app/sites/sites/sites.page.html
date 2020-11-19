@@ -1,0 +1,20 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start"  routerLink="../../clients"color="primary">
+      <ion-icon name="arrow-round-back"></ion-icon>
+      </ion-button>
+    <ion-title>sites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let item of sites">
+    <ion-item>
+      <ion-label class="client-item">{{item.site}} </ion-label>
+      <ion-button  routerLink="../../site/{{item.id}}" color="primary">
+        <ion-icon name="arrow-forward"  class="clientlogo"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </div>
+</ion-content>

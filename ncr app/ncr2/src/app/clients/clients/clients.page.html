@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      clients
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div *ngFor="let item of client">
+  
+  <ion-item>
+    <ion-label class="client-item">{{item.client}} </ion-label>
+    <ion-button   routerLink="../sites/{{item.id}}"  animation="Animation" color="primary">
+      <ion-icon name="arrow-forward"  class="clientlogo"></ion-icon>
+    </ion-button>
+    
+  </ion-item>
+</div>
+
+</ion-content>
